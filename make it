@@ -1,0 +1,15 @@
+import random
+
+def lottery(place):
+    # 从楼层，商业街中随机选择一个
+    space = random.choice(place)
+    return space
+
+if __name__ == "__main__":
+    # 楼层，商业街列表
+    place = ["1楼", "2楼", "3楼","商业街"]
+    
+    # 进行随机选择
+    result = lottery(place)
+    
+    print(f"今天去{result}!!!")
